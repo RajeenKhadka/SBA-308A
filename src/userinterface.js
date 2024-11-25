@@ -19,12 +19,11 @@ export function displayDogs(dogs, gallery) {
   dogs.forEach((dog) => displayDog(dog, gallery));
 }
 
-// Display a single dog image (only image, no card)
 export function displayDog(dog, gallery) {
   const img = document.createElement("img");
   img.src = dog.url;
   img.alt = "Dog image";
-  img.className = "dog-image"; // Optional class for styling
+  img.className = "dog-image";
 
   gallery.appendChild(img);
 }
